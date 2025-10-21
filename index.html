@@ -52,9 +52,9 @@
 
   <!-- Hero -->
   <section class="relative isolate">
-    <!-- ✅ Your local image -->
+    <!-- ✅ Your local PNG hero image -->
     <img
-      src="images/image1.jpg"
+      src="images/image1.png"
       alt="CircuitFox PC Services hero image"
       class="absolute inset-0 w-full h-full object-cover"
       loading="eager"
@@ -76,10 +76,16 @@
     </div>
   </section>
 
-  <!-- Trust bar -->
-  <section class="bg-white border-y border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center text-sm text-slate-600">
-      <div class="px-2">Diagnostics in 24h</div>
-      <div class="px-2">Data privacy first</div>
-      <div class="px-2">On-site visits</div>
-      <div
+  <!-- (rest of your site stays the same) -->
+  <!-- ... -->
+  
+  <script>
+    // mobile menu
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+    // year
+    document.getElementById('year')?.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
