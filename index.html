@@ -1,79 +1,85 @@
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Free Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CircuitFox PC Services — Fast, Friendly PC Repair</title>
+  <meta name="description" content="CircuitFox PC Services — fast, friendly computer repair, upgrades, AI implementation, and home/office IT support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-    }
-    .hero {
-      background-image: linear-gradient(to right, #4f46e5, #7c3aed);
-      color: white;
-    }
+    :root { --brand:#6d28d9; --brand-2:#4f46e5; }
+    html { scroll-behavior:smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.08); }
   </style>
 </head>
-<body class="bg-gray-100">
-  <!-- Navigation Bar -->
-  <nav class="bg-white shadow-md p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">My Website</h1>
-      <ul class="flex space-x-6">
-        <li><a href="#home" class="text-gray-600 hover:text-indigo-600">Home</a></li>
-        <li><a href="#about" class="text-gray-600 hover:text-indigo-600">About</a></li>
-        <li><a href="#contact" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
-      </ul>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-3">
+        <svg class="h-8 w-8 text-violet-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 7l4-4 5 5 5-5 4 4-9 14z" />
+          <circle cx="9" cy="12" r="1.2" />
+          <circle cx="15" cy="12" r="1.2" />
+        </svg>
+        <span class="font-extrabold tracking-tight text-xl">Circuit<span class="text-violet-700">Fox</span> PC Services</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#services" class="hover:text-violet-700">Services</a>
+        <a href="#areas" class="hover:text-violet-700">Areas</a>
+        <a href="#about" class="hover:text-violet-700">About</a>
+        <a href="#contact" class="hover:text-violet-700">Contact</a>
+        <a href="#contact" class="inline-flex items-center rounded-full bg-violet-700 text-white px-4 py-2 font-semibold hover:bg-violet-600">Get a Quote</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden inline-flex items-center p-2 rounded hover:bg-slate-100" aria-label="Open menu">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero py-20 text-center">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-bold mb-4">Welcome to My Free Website</h2>
-      <p class="text-lg mb-6">A simple, modern, and responsive website built with HTML, CSS, and TailwindCSS.</p>
-      <a href="#contact" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-100">Get Started</a>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+      <div class="px-4 py-3 space-y-2">
+        <a href="#services" class="block py-2">Services</a>
+        <a href="#areas" class="block py-2">Areas</a>
+        <a href="#about" class="block py-2">About</a>
+        <a href="#contact" class="block py-2">Contact</a>
+        <a href="#contact" class="block py-2 font-semibold text-violet-700">Get a Quote</a>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-white">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">About Us</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">This is a free website template created for quick deployment. Customize it to fit your needs, add your content, and deploy it on any free hosting platform like GitHub Pages or Netlify.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-gray-100">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-      <p class="text-gray-600 mb-6">Have questions? Reach out to us!</p>
-      <div class="max-w-md mx-auto">
-        <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded">
-        <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded">
-        <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded" rows="4"></textarea>
-        <button class="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700" onclick="alert('Form submission simulated!')">Send Message</button>
+  <!-- Hero -->
+  <section class="relative isolate">
+    <!-- ✅ Your local image -->
+    <img
+      src="images/image1.jpg"
+      alt="CircuitFox PC Services hero image"
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-gradient-to-br from-violet-900/85 via-indigo-900/75 to-slate-900/65"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 text-white">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">PC Repair & IT Support</h1>
+        <p class="mt-4 text-lg/7 text-violet-100">CircuitFox PC Services keeps your tech fast, secure, and hassle-free. Same-day fixes, fair pricing, and friendly support for homes and small businesses.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center rounded-lg bg-white text-slate-900 px-5 py-3 font-semibold hover:bg-slate-100">Book a Repair</a>
+          <a href="#services" class="inline-flex items-center rounded-lg glass border border-white/10 px-5 py-3 font-semibold">See Services</a>
+        </div>
+        <div class="mt-6 flex items-center gap-6 text-sm text-violet-100/90">
+          <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-400"></span> Same-day options</div>
+          <div>No fix, no fee</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 My Free Website. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-</body>
+  <!-- Trust bar -->
+  <section class="bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center text-sm text-slate-600">
+      <div class="px-2">Diagnostics in 24h</div>
+      <div class="px-2">Data privacy first</div>
+      <div class="px-2">On-site visits</div>
+      <div
