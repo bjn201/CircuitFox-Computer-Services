@@ -55,7 +55,7 @@
   <a id="top"></a>
   <section class="relative isolate">
     <img
-      src="image1.png"
+      src="./image1.png"
       alt="CircuitFox — PC services hero image"
       class="absolute inset-0 w-full h-full object-cover"
       loading="eager"
@@ -87,34 +87,54 @@
     </div>
   </section>
 
-  <!-- Services (moved above Custom Builds) -->
+  <!-- Services (bullet list, first) -->
   <section id="services" class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Services</h2>
       <p class="mt-2 text-slate-600 max-w-2xl">If it plugs into your PC (or Wi-Fi), we can help.</p>
-      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="rounded-2xl bg-white shadow-sm border border-slate-200 p-6">
-          <div class="h-10 w-10 rounded-lg bg-violet-100 text-violet-700 grid place-items-center">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8"/></svg>
-          </div>
-          <h3 class="mt-4 font-semibold text-lg">Hardware Repair & Upgrades</h3>
-          <p class="mt-2 text-slate-600">Faulty PSU, dead GPU, noisy fans, SSD/RAM upgrades, custom builds, thermal service.</p>
-        </div>
-        <div class="rounded-2xl bg-white shadow-sm border border-slate-200 p-6">
-          <div class="h-10 w-10 rounded-lg bg-violet-100 text-violet-700 grid place-items-center">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 20v-6M6 20v-4M18 20v-8"/><rect x="2" y="3" width="20" height="14" rx="2"/></svg>
-          </div>
-          <h3 class="mt-4 font-semibold text-lg">Diagnostics & Performance Tune-ups</h3>
-          <p class="mt-2 text-slate-600">Health checks, slow PC fixes, startup cleanup, thermal & driver optimisation.</p>
-        </div>
-        <div class="rounded-2xl bg-white shadow-sm border border-slate-200 p-6">
-          <div class="h-10 w-10 rounded-lg bg-violet-100 text-violet-700 grid place-items-center">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v4M12 18v4M4 12H0M24 12h-4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8"/></svg>
-          </div>
-          <h3 class="mt-4 font-semibold text-lg">AI Implementation (Home & Business)</h3>
-          <p class="mt-2 text-slate-600">Personal and team workflows with AI: setup, prompt design, tools, policy & training—practical automation that saves time.</p>
-        </div>
-      </div>
+
+      <ul class="mt-8 grid sm:grid-cols-2 gap-x-10 gap-y-4 text-slate-800">
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          <a href="#builds" class="font-semibold hover:text-violet-700">Custom PC Builds</a>
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          Hardware repair & upgrades (PSU/GPU, SSD & RAM, fans & coolers)
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          Diagnostics & performance tune-ups (health checks, thermal & driver optimisation)
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          Data recovery — SSD/HDD/NVMe, accidental deletes, OS won’t boot
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          Motherboard troubleshooting & BIOS/UEFI updates (POST/no-display/beeps)
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          PC cleaning & dusting for performance boosting (optional thermal paste refresh)
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          OS reinstall & malware removal (Windows 10/11, data preserved where possible)
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          Wi-Fi & home/office networking, printers & peripherals setup
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          Backup & cloud setup (OneDrive/Google Drive, NAS)
+        </li>
+        <li class="flex gap-3">
+          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
+          On-site call-outs & collect/return service
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -127,8 +147,9 @@
       <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <!-- Low End ~£750 -->
         <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-          <img src="greenpc.png"
-               alt="Green PC build — compact entry-level tower" class="w-full h-44 object-cover" loading="lazy">
+          <img src="./Redpc.jpg"
+               alt="Red PC build — compact entry-level tower"
+               class="w-full h-44 object-cover" loading="lazy">
           <div class="p-6">
             <h3 class="text-lg font-bold">Low-End Build — ~£750</h3>
             <p class="mt-1 text-slate-600 text-sm">Esports, school/work, light creation, 1080p gaming.</p>
@@ -146,8 +167,9 @@
 
         <!-- Mid ~£1,200 -->
         <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-          <img src="redpc.png"
-               alt="Red PC build — mid-range tempered glass tower with RGB" class="w-full h-44 object-cover" loading="lazy">
+          <img src="./Bluepc.jpg"
+               alt="Blue PC build — mid-range tempered glass tower with RGB"
+               class="w-full h-44 object-cover" loading="lazy">
           <div class="p-6">
             <h3 class="text-lg font-bold">Mid Build — ~£1,200</h3>
             <p class="mt-1 text-slate-600 text-sm">1440p gaming, streaming, light editing; quiet and efficient.</p>
@@ -164,10 +186,11 @@
           </div>
         </article>
 
-        <!-- Upper-Mid — SPECIFIED BUILD -->
+        <!-- Upper-Mid — SPECIFIED BUILD (Green image for RTX 3090) -->
         <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-          <img src="bluepc.png"
-               alt="Blue PC build — performance rig with RGB fans" class="w-full h-44 object-cover" loading="lazy">
+          <img src="./Greenpc.png"
+               alt="Green PC build — performance rig with RTX 3090"
+               class="w-full h-44 object-cover" loading="lazy">
           <div class="p-6">
             <h3 class="text-lg font-bold">Upper-Mid Build — ~£1,700</h3>
             <p class="mt-1 text-slate-600 text-sm">Serious 1440p/high-refresh gaming and creator work.</p>
@@ -186,8 +209,9 @@
 
         <!-- High-End ~£2,000 -->
         <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-          <img src="greenpc.png"
-               alt="Green PC build — high-end custom aesthetic" class="w-full h-44 object-cover" loading="lazy">
+          <img src="./Bluepc.jpg"
+               alt="Blue PC build — high-end custom aesthetic"
+               class="w-full h-44 object-cover" loading="lazy">
           <div class="p-6">
             <h3 class="text-lg font-bold">High-End Build — ~£2,000</h3>
             <p class="mt-1 text-slate-600 text-sm">Top 1440p / entry 4K, heavy content creation, AI/ML tinkering.</p>
