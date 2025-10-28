@@ -13,6 +13,15 @@
     html { scroll-behavior:smooth; }
     body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
     .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.08); }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1.2s ease-out both;
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -64,10 +73,11 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 text-white">
       <div class="max-w-2xl">
         <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">PC Repair & IT Support</h1>
-        <p class="mt-4 text-lg/7 text-violet-100">CircuitFox PC Services keeps your tech fast, secure, and hassle-free. Same-day fixes, fair pricing, and friendly support for homes and small businesses.</p>
+        <p class="mt-2 text-xl text-violet-200 font-medium fade-in">Serving Ashtead, Leatherhead, Epsom, Dorking and surrounding areas.</p>
+        <p class="mt-4 text-lg/7 text-violet-100">CircuitFox PC Services offers Same-day fixes, fair pricing, and friendly support for individuals and small businesses. Call outs available.</p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#builds" class="inline-flex items-center rounded-lg bg-white text-slate-900 px-5 py-3 font-semibold hover:bg-slate-100">See Custom Builds</a>
-          <a href="#services" class="inline-flex items-center rounded-lg glass border border-white/10 px-5 py-3 font-semibold">See Services</a>
+          <a href="#services" class="inline-flex items-center rounded-lg bg-white text-slate-900 px-5 py-3 font-semibold hover:bg-slate-100">See Services Offered</a>
+          <a href="#builds" class="inline-flex items-center rounded-lg glass border border-white/10 px-5 py-3 font-semibold">See Custom Builds</a>
         </div>
         <div class="mt-6 flex items-center gap-6 text-sm text-violet-100/90">
           <div class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-400"></span> Same-day options</div>
@@ -95,237 +105,3 @@
 
       <ul class="mt-8 grid sm:grid-cols-2 gap-x-10 gap-y-4 text-slate-800">
         <li class="flex gap-3">
-          <span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>
-          <a href="#builds" class="font-semibold hover:text-violet-700">Custom PC Builds</a>
-        </li>
-        <li class="flex gap-3"><span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>Hardware repair & upgrades (PSU/GPU, SSD & RAM, fans & coolers)</li>
-        <li class="flex gap-3"><span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>Diagnostics & performance tune-ups (health checks, thermal & driver optimisation)</li>
-        <li class="flex gap-3"><span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>Data recovery — SSD/HDD/NVMe, accidental deletes, OS won’t boot</li>
-        <li class="flex gap-3"><span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>Motherboard troubleshooting & BIOS/UEFI updates (POST/no-display/beeps)</li>
-        <li class="flex gap-3"><span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>PC cleaning & dusting for performance boosting (optional thermal paste refresh)</li>
-        <li class="flex gap-3"><span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>OS reinstall & malware removal (Windows 10/11, data preserved where possible)</li>
-        <li class="flex gap-3"><span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>Wi-Fi & home/office networking, printers & peripherals setup</li>
-        <li class="flex gap-3"><span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>Backup & cloud setup (OneDrive/Google Drive, NAS)</li>
-        <li class="flex gap-3"><span class="mt-1 inline-flex h-3 w-3 rounded-full bg-violet-600"></span>On-site call-outs & collect/return service</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Custom Builds -->
-  <section id="builds" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Custom PC Builds</h2>
-      <p class="mt-2 text-slate-600 max-w-2xl">Four example builds — parts are swappable to match your budget, style, and use-case.</p>
-
-      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        <!-- Standard ~£750 -->
-        <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-          <img src="./Redpc.jpg" alt="Standard build — compact entry-level tower" class="w-full h-44 object-cover" loading="lazy">
-          <div class="p-6">
-            <h3 class="text-lg font-bold">Standard Build — ~£750</h3>
-            <p class="mt-1 text-slate-600 text-sm">Esports, school/work, light creation, 1080p gaming.</p>
-            <ul class="mt-4 space-y-1.5 text-sm text-slate-700">
-              <li>• CPU: Ryzen 5 5600 / i5-12400</li>
-              <li>• GPU: RTX 3060 / RX 7600</li>
-              <li>• RAM: 16GB DDR4</li>
-              <li>• Storage: 1TB NVMe SSD</li>
-              <li>• Motherboard: B550/B660</li>
-              <li>• PSU: 550–650W 80+ Bronze</li>
-              <li>• Case: Compact ATX, good airflow</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Gaming Lite ~£1,200 -->
-        <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-          <img src="./Bluepc.jpg" alt="Gaming Lite — mid-range tempered glass tower with RGB" class="w-full h-44 object-cover" loading="lazy">
-          <div class="p-6">
-            <h3 class="text-lg font-bold">Gaming Lite — ~£1,200</h3>
-            <p class="mt-1 text-slate-600 text-sm">1440p gaming, streaming, light editing; quiet and efficient.</p>
-            <ul class="mt-4 space-y-1.5 text-sm text-slate-700">
-              <li>• CPU: Ryzen 5 7600X / i5-13600K</li>
-              <li>• GPU: RTX 4070 / RX 7800 XT</li>
-              <li>• RAM: 32GB DDR5</li>
-              <li>• Storage: 1TB NVMe SSD (Gen4)</li>
-              <li>• Motherboard: B650 or value Z790</li>
-              <li>• PSU: 650–750W 80+ Gold</li>
-              <li>• Case: Airflow mid tower</li>
-              <li>• Cooler: 240mm AIO or premium air</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Gaming Plus ~£1,700 -->
-        <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-          <img src="./Greenpc.png" alt="Gaming Plus — performance rig" class="w-full h-44 object-cover" loading="lazy">
-          <div class="p-6">
-            <h3 class="text-lg font-bold">Gaming Plus — ~£1,700</h3>
-            <p class="mt-1 text-slate-600 text-sm">Serious 1440p/high-refresh gaming and creator work.</p>
-            <ul class="mt-4 space-y-1.5 text-sm text-slate-700">
-              <li>• CPU: Ryzen 7 9800X3D</li>
-              <li>• GPU: RTX 3090 (24GB)</li>
-              <li>• RAM: 32GB DDR5</li>
-              <li>• Storage: 1TB NVMe SSD (Gen4) + optional 2TB add-on</li>
-              <li>• Motherboard: MSI B850 PRO</li>
-              <li>• PSU: 850W 80+ Gold</li>
-              <li>• Case: Premium airflow tower</li>
-              <li>• Cooler: 360mm AIO or top-tier air</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Extreme ~£2,000 -->
-        <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-          <img src="./Bluepc.jpg" alt="Extreme build — high-end custom aesthetic" class="w-full h-44 object-cover" loading="lazy">
-          <div class="p-6">
-            <h3 class="text-lg font-bold">Extreme Build — ~£2,000</h3>
-            <p class="mt-1 text-slate-600 text-sm">Top 1440p / entry 4K, heavy content creation, AI/ML tinkering.</p>
-            <ul class="mt-4 space-y-1.5 text-sm text-slate-700">
-              <li>• CPU: Ryzen 9 7900X/7950X / i7-14700K</li>
-              <li>• GPU: RTX 4080 Super / RX 7900 XTX</li>
-              <li>• RAM: 32–64GB DDR5</li>
-              <li>• Storage: 2TB NVMe SSD (Gen4) + scratch SSD optional</li>
-              <li>• Motherboard: X670E / Z790 performance</li>
-              <li>• PSU: 850–1000W 80+ Gold/Platinum (ATX 3.0)</li>
-              <li>• Case: Premium tower, excellent thermals</li>
-              <li>• Cooler: 360mm AIO or custom loop-ready</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-
-      <div class="mt-10 rounded-2xl border border-violet-200 bg-white p-6">
-        <h3 class="text-lg font-semibold">Want one tailored to you?</h3>
-        <p class="mt-2 text-slate-600">Tell us your games/apps, monitor resolution, and style preference. We’ll propose a parts list that fits your budget, with options.</p>
-        <a href="#contact" class="inline-flex mt-4 items-center rounded-lg bg-violet-700 text-white px-5 py-3 font-semibold hover:bg-violet-600">Request a Custom Quote</a>
-      </div>
-      <p class="mt-3 text-xs text-slate-500">Component models shown are examples; availability and pricing can vary. We’re happy to swap brands or aesthetics to taste.</p>
-    </div>
-  </section>
-
-  <!-- Areas -->
-  <section id="areas" class="py-16 bg-white border-y border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Areas We Cover</h2>
-      <p class="mt-2 text-slate-600 max-w-2xl">Local call-outs and collect/return service.</p>
-      <div class="mt-6 flex flex-wrap gap-2">
-        <span class="px-3 py-1.5 rounded-full bg-violet-100 text-violet-800 text-sm">Cobham</span>
-        <span class="px-3 py-1.5 rounded-full bg-violet-100 text-violet-800 text-sm">Esher</span>
-        <span class="px-3 py-1.5 rounded-full bg-violet-100 text-violet-800 text-sm">Ashtead</span>
-        <span class="px-3 py-1.5 rounded-full bg-violet-100 text-violet-800 text-sm">Leatherhead</span>
-        <span class="px-3 py-1.5 rounded-full bg-violet-100 text-violet-800 text-sm">Epsom</span>
-        <span class="px-3 py-1.5 rounded-full bg-violet-100 text-violet-800 text-sm">Kingston</span>
-        <span class="px-3 py-1.5 rounded-full bg-violet-100 text-violet-800 text-sm">Woking</span>
-        <span class="px-3 py-1.5 rounded-full bg-violet-100 text-violet-800 text-sm">Surrounding areas</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">About CircuitFox</h2>
-        <p class="mt-4 text-slate-600">We’re a friendly local team who’ve built and repaired PCs for years — from quiet family desktops to high-performance workstations. We believe in honest advice and doing the job properly.</p>
-        <ul class="mt-6 space-y-3 text-slate-700">
-          <li class="flex gap-3"><span class="text-violet-700">✓</span> Clear quotes before work starts</li>
-          <li class="flex gap-3"><span class="text-violet-700">✓</span> Data handled securely and privately</li>
-        </ul>
-      </div>
-      <figure class="relative">
-        <img class="w-full rounded-2xl shadow-lg border border-slate-200"
-             src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop"
-             alt="Neat PC workspace" loading="lazy" />
-      </figure>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Get a fast quote</h2>
-        <p class="mt-3 text-slate-600">Tell us what’s wrong and your preferred time. We’ll respond quickly with options.</p>
-
-        <!-- Working form for GitHub Pages: opens user's mail client to send to info@circuitfoxtech.com -->
-        <form id="contactForm" class="mt-8 space-y-4">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <input name="name" class="w-full rounded-xl border-slate-300 focus:border-violet-500 focus:ring-violet-500" type="text" placeholder="Full name" required />
-            <input name="email" class="w-full rounded-xl border-slate-300 focus:border-violet-500 focus:ring-violet-500" type="email" placeholder="Email address" required />
-          </div>
-          <textarea name="message" class="w-full rounded-xl border-slate-300 focus:border-violet-500 focus:ring-violet-500" rows="4" placeholder="Describe the issue…" required></textarea>
-          <button class="inline-flex items-center rounded-xl bg-violet-700 text-white px-6 py-3 font-semibold hover:bg-violet-600">Request Quote</button>
-          <p class="text-xs text-slate-500">Submitting opens your email app with the details addressed to <strong>info@circuitfoxtech.com</strong>.</p>
-        </form>
-      </div>
-
-      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
-        <h3 class="font-semibold text-lg">Contact details</h3>
-        <div class="mt-3 space-y-2 text-sm">
-          <p><strong>Email:</strong> info@circuitfoxtech.com</p>
-          <p><strong>Phone:</strong> 07410 582082</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-slate-900 text-slate-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-8">
-      <div>
-        <div class="flex items-center space-x-3">
-          <svg class="h-7 w-7 text-violet-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path d="M3 7l4-4 5 5 5-5 4 4-9 14z" />
-          </svg>
-          <span class="font-extrabold text-white">CircuitFox PC Services</span>
-        </div>
-        <p class="mt-4 text-sm">Fast, friendly computer repair and support for homes and small businesses.</p>
-      </div>
-      <div class="text-sm">
-        <h4 class="font-semibold text-white">Quick links</h4>
-        <ul class="mt-3 space-y-2">
-          <li><a href="#services" class="hover:text-white">Services</a></li>
-          <li><a href="#builds" class="hover:text-white">Custom Builds</a></li>
-          <li><a href="#areas" class="hover:text-white">Areas</a></li>
-          <li><a href="#about" class="hover:text-white">About</a></li>
-          <li><a href="#contact" class="hover:text-white">Contact</a></li>
-        </ul>
-      </div>
-      <div class="text-sm">
-        <h4 class="font-semibold text-white">Legal</h4>
-        <ul class="mt-3 space-y-2">
-          <li><a href="#" class="hover:text-white">Terms</a></li>
-          <li><a href="#" class="hover:text-white">Privacy</a></li>
-          <li><span>© <span id="year"></span> CircuitFox PC Services</span></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // mobile menu
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
-    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
-
-    // footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Contact form -> opens user's mail client with prefilled message to info@circuitfoxtech.com
-    const form = document.getElementById('contactForm');
-    form?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      const message = form.message.value.trim();
-
-      const subject = encodeURIComponent(`Quote request — ${name}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-      );
-      window.location.href = `mailto:info@circuitfoxtech.com?subject=${subject}&body=${body}`;
-    });
-  </script>
-</body>
-</html>
-
