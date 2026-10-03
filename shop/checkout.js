@@ -1,3 +1,1 @@
-'use strict';
-const productId = document.currentScript.dataset.product;
-fetch('/shop/products.json').then(r=>{if(!r.ok)throw new Error('Catalogue unavailable');return r.json()}).then(products=>{const product=products.find(p=>p.id===productId);if(!product || typeof product.price!=='string' || !product.price.trim() || !product.stripeUrl)return;const url=new URL(product.stripeUrl);if(url.protocol!=='https:' || url.hostname!=='buy.stripe.com')return;document.getElementById('product-price').textContent=product.price;const link=document.createElement('a');link.className='button';link.href=url.href;link.textContent='Buy securely with Stripe';document.getElementById('checkout').replaceChildren(link)}).catch(()=>{});
+// Checkout configuration is shared across every product card in /assets/site.js.

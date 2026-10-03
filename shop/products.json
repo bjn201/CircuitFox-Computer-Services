@@ -2,73 +2,89 @@
   {
     "id": "raspberry-pi-4",
     "name": "Raspberry Pi 4 Model B · 2GB",
-    "category": "Computing",
-    "description": "A compact single-board computer for an offline reference library, small home server or practical learning project.",
-    "specs": "2GB RAM; Ethernet; board only. Storage, case and power supply are separate.",
-    "price": null,
-    "stripeUrl": null
+    "category": "Raspberry Pi",
+    "key": "raspberry-pi",
+    "description": "A tiny computer for a retro games box, media centre, home server or first coding project.",
+    "specs": "2GB RAM, Wi-Fi, Ethernet. Board only — pair with the case kit and a microSD.",
+    "price": "£[PRICE]",
+    "orderLink": "[ORDER LINK]",
+    "image": "/assets/product-placeholder.svg"
   },
   {
     "id": "pi-case-kit",
     "name": "GeeekPi Raspberry Pi 4 case kit",
-    "category": "Computing",
-    "description": "An ABS enclosure with cooling and a UK power adapter for a Raspberry Pi 4 Model B.",
-    "specs": "PWM fan; four heatsinks; supplied adapter labelled 5V 3.6A. Pi board and microSD not included.",
-    "price": null,
-    "stripeUrl": null
+    "category": "Raspberry Pi",
+    "key": "raspberry-pi",
+    "description": "Everything to house and cool your Pi: case, fan, heatsinks and a UK plug.",
+    "specs": "PWM fan, 4 heatsinks, 5V 3.6A UK adapter. Pi and microSD sold separately.",
+    "price": "£[PRICE]",
+    "orderLink": "[ORDER LINK]",
+    "image": "/assets/product-placeholder.svg"
   },
   {
     "id": "microsd",
     "name": "microSD storage for Raspberry Pi",
     "category": "Storage",
-    "description": "Boot storage and offline files for a Raspberry Pi, with capacity chosen around your project.",
-    "specs": "Exact brand, capacity and speed class to be confirmed before launch.",
-    "price": null,
-    "stripeUrl": null
+    "key": "storage",
+    "description": "Your Pi's hard drive. Tell us what you're building and we'll suggest the right size.",
+    "specs": "[BRAND / SIZE / SPEED]",
+    "price": "£[PRICE]",
+    "orderLink": "[ORDER LINK]",
+    "image": "/assets/product-placeholder.svg"
   },
   {
     "id": "card-reader",
     "name": "USB-C 3-in-1 SD / microSD reader",
     "category": "Storage",
-    "description": "A dual-slot card reader for transferring files and preparing removable storage.",
-    "specs": "SD and microSD slots. Check device support and connector compatibility before ordering.",
-    "price": null,
-    "stripeUrl": null
-  },
-  {
-    "id": "iniu-power-bank",
-    "name": "INIU 45W 10,000mAh power bank",
-    "category": "Portable power",
-    "description": "A pocket-size power bank for keeping compatible phones and USB devices charged away from a socket.",
-    "specs": "Advertised maximum output 45W; battery capacity 10,000mAh. Actual charging rate depends on device, port and cable.",
-    "price": null,
-    "stripeUrl": null
+    "key": "storage",
+    "description": "Read SD and microSD cards on a USB-C laptop or phone. Handy for setting up a Pi or grabbing camera photos.",
+    "specs": "",
+    "price": "£[PRICE]",
+    "orderLink": "[ORDER LINK]",
+    "image": "/assets/product-placeholder.svg"
   },
   {
     "id": "iniu-cable",
     "name": "INIU 2m USB-A to USB-C cable",
-    "category": "Accessories",
-    "description": "A longer charging lead for USB-A chargers and devices with USB-C charging ports.",
-    "specs": "2m length; advertised 3.1A. USB-A connection does not provide USB-C Power Delivery.",
-    "price": null,
-    "stripeUrl": null
+    "category": "Cables & Charging",
+    "key": "cables-charging",
+    "description": "A 2m lead, so you can charge from the sofa instead of the floor.",
+    "specs": "USB-A to USB-C, 3.1A.",
+    "price": "£[PRICE]",
+    "orderLink": "[ORDER LINK]",
+    "image": "/assets/product-placeholder.svg"
+  },
+  {
+    "id": "iniu-power-bank",
+    "name": "INIU 45W 10,000mAh power bank",
+    "category": "Portable Power",
+    "key": "portable-power",
+    "description": "Pocket-sized and quick enough to top up a phone or tablet on the go.",
+    "specs": "10,000mAh, up to 45W.",
+    "price": "£[PRICE]",
+    "orderLink": "[ORDER LINK]",
+    "image": "/assets/product-placeholder.svg"
   },
   {
     "id": "fossibot-f1200",
     "name": "FOSSiBOT F1200 portable power station",
-    "category": "Backup power",
-    "description": "Portable battery power for selected electronics at home or away, with loads planned around capacity and output limits.",
-    "specs": "Manufacturer-rated 1,024Wh capacity and 1,200W continuous AC output. Runtime varies with the load.",
-    "price": null,
-    "stripeUrl": null
+    "category": "Portable Power",
+    "key": "portable-power",
+    "description": "A big rechargeable battery with plug sockets, for camping, vans, festivals and the garden.",
+    "specs": "1,024Wh, 1,200W AC output.",
+    "price": "£[PRICE]",
+    "orderLink": "[ORDER LINK]",
+    "image": "/assets/product-placeholder.svg"
   },
   {
     "id": "solar-panel-200w",
     "name": "FOSSiBOT 200W portable solar panel",
-    "category": "Backup power",
-    "description": "A portable solar charging option to complement a compatible power station.",
-    "specs": "200W rated panel. Check voltage, connectors and power-station input limits; sunlight determines actual output.",
-    "price": null,
-    "stripeUrl": null
+    "category": "Portable Power",
+    "key": "portable-power",
+    "description": "Fold-out panel to recharge your power station outdoors.",
+    "specs": "200W rated. Ask us about compatibility.",
+    "price": "£[PRICE]",
+    "orderLink": "[ORDER LINK]",
+    "image": "/assets/product-placeholder.svg"
   }
 ]
