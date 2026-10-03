@@ -1,0 +1,2 @@
+# Stripe checkout activation
+Edit products.json for each confirmed listing: set price to the public formatted selling price (for example "£49.00") and stripeUrl to its https://buy.stripe.com/ Payment Link. Both are required before a buy button appears. Verify stock, condition, package contents, shipping, tax, returns and merchant contact details before activating live links. No secret Stripe key belongs in this static repository. Catalogue prices shown on the shop index must be updated alongside activation. No affiliate links are used.
