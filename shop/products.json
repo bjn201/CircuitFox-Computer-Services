@@ -1,0 +1,74 @@
+[
+  {
+    "id": "raspberry-pi-4",
+    "name": "Raspberry Pi 4 Model B · 2GB",
+    "category": "Computing",
+    "description": "A compact single-board computer for an offline reference library, small home server or practical learning project.",
+    "specs": "2GB RAM; Ethernet; board only. Storage, case and power supply are separate.",
+    "price": null,
+    "stripeUrl": null
+  },
+  {
+    "id": "pi-case-kit",
+    "name": "GeeekPi Raspberry Pi 4 case kit",
+    "category": "Computing",
+    "description": "An ABS enclosure with cooling and a UK power adapter for a Raspberry Pi 4 Model B.",
+    "specs": "PWM fan; four heatsinks; supplied adapter labelled 5V 3.6A. Pi board and microSD not included.",
+    "price": null,
+    "stripeUrl": null
+  },
+  {
+    "id": "microsd",
+    "name": "microSD storage for Raspberry Pi",
+    "category": "Storage",
+    "description": "Boot storage and offline files for a Raspberry Pi, with capacity chosen around your project.",
+    "specs": "Exact brand, capacity and speed class to be confirmed before launch.",
+    "price": null,
+    "stripeUrl": null
+  },
+  {
+    "id": "card-reader",
+    "name": "USB-C 3-in-1 SD / microSD reader",
+    "category": "Storage",
+    "description": "A dual-slot card reader for transferring files and preparing removable storage.",
+    "specs": "SD and microSD slots. Check device support and connector compatibility before ordering.",
+    "price": null,
+    "stripeUrl": null
+  },
+  {
+    "id": "iniu-power-bank",
+    "name": "INIU 45W 10,000mAh power bank",
+    "category": "Portable power",
+    "description": "A pocket-size power bank for keeping compatible phones and USB devices charged away from a socket.",
+    "specs": "Advertised maximum output 45W; battery capacity 10,000mAh. Actual charging rate depends on device, port and cable.",
+    "price": null,
+    "stripeUrl": null
+  },
+  {
+    "id": "iniu-cable",
+    "name": "INIU 2m USB-A to USB-C cable",
+    "category": "Accessories",
+    "description": "A longer charging lead for USB-A chargers and devices with USB-C charging ports.",
+    "specs": "2m length; advertised 3.1A. USB-A connection does not provide USB-C Power Delivery.",
+    "price": null,
+    "stripeUrl": null
+  },
+  {
+    "id": "fossibot-f1200",
+    "name": "FOSSiBOT F1200 portable power station",
+    "category": "Backup power",
+    "description": "Portable battery power for selected electronics at home or away, with loads planned around capacity and output limits.",
+    "specs": "Manufacturer-rated 1,024Wh capacity and 1,200W continuous AC output. Runtime varies with the load.",
+    "price": null,
+    "stripeUrl": null
+  },
+  {
+    "id": "solar-panel-200w",
+    "name": "FOSSiBOT 200W portable solar panel",
+    "category": "Backup power",
+    "description": "A portable solar charging option to complement a compatible power station.",
+    "specs": "200W rated panel. Check voltage, connectors and power-station input limits; sunlight determines actual output.",
+    "price": null,
+    "stripeUrl": null
+  }
+]
