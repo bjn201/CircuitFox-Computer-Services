@@ -8,7 +8,8 @@
     "specs": "2GB RAM, Wi-Fi, Ethernet. Board only — pair with the case kit and a microSD.",
     "price": "£[PRICE]",
     "orderLink": "[ORDER LINK]",
-    "image": "/assets/product-placeholder.svg"
+    "image": "/images/products/raspberry-pi-4.jpg",
+    "imageAlt": "Raspberry Pi 4 Model B · 2GB"
   },
   {
     "id": "pi-case-kit",
@@ -19,7 +20,8 @@
     "specs": "PWM fan, 4 heatsinks, 5V 3.6A UK adapter. Pi and microSD sold separately.",
     "price": "£[PRICE]",
     "orderLink": "[ORDER LINK]",
-    "image": "/assets/product-placeholder.svg"
+    "image": "/images/products/pi-case-kit.jpg",
+    "imageAlt": "GeeekPi Raspberry Pi 4 case kit"
   },
   {
     "id": "microsd",
@@ -30,7 +32,8 @@
     "specs": "[BRAND / SIZE / SPEED]",
     "price": "£[PRICE]",
     "orderLink": "[ORDER LINK]",
-    "image": "/assets/product-placeholder.svg"
+    "image": "/images/products/microsd.svg",
+    "imageAlt": "Generic microSD card illustration; brand and capacity to be confirmed"
   },
   {
     "id": "card-reader",
@@ -41,7 +44,8 @@
     "specs": "",
     "price": "£[PRICE]",
     "orderLink": "[ORDER LINK]",
-    "image": "/assets/product-placeholder.svg"
+    "image": "/images/products/card-reader.jpg",
+    "imageAlt": "USB-C 3-in-1 SD / microSD reader"
   },
   {
     "id": "iniu-cable",
@@ -52,7 +56,8 @@
     "specs": "USB-A to USB-C, 3.1A.",
     "price": "£[PRICE]",
     "orderLink": "[ORDER LINK]",
-    "image": "/assets/product-placeholder.svg"
+    "image": "/images/products/iniu-cable.jpg",
+    "imageAlt": "INIU 2m USB-A to USB-C cable"
   },
   {
     "id": "iniu-power-bank",
@@ -63,7 +68,8 @@
     "specs": "10,000mAh, up to 45W.",
     "price": "£[PRICE]",
     "orderLink": "[ORDER LINK]",
-    "image": "/assets/product-placeholder.svg"
+    "image": "/images/products/iniu-power-bank.jpg",
+    "imageAlt": "INIU 45W 10,000mAh power bank"
   },
   {
     "id": "fossibot-f1200",
@@ -74,7 +80,8 @@
     "specs": "1,024Wh, 1,200W AC output.",
     "price": "£[PRICE]",
     "orderLink": "[ORDER LINK]",
-    "image": "/assets/product-placeholder.svg"
+    "image": "/images/products/fossibot-f1200.webp",
+    "imageAlt": "FOSSiBOT F1200 portable power station"
   },
   {
     "id": "solar-panel-200w",
@@ -85,6 +92,7 @@
     "specs": "200W rated. Ask us about compatibility.",
     "price": "£[PRICE]",
     "orderLink": "[ORDER LINK]",
-    "image": "/assets/product-placeholder.svg"
+    "image": "/images/products/solar-panel-200w.webp",
+    "imageAlt": "FOSSiBOT 200W portable solar panel"
   }
 ]
