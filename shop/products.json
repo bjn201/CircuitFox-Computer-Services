@@ -1,16 +1,18 @@
 [
   {
     "id": "raspberry-pi-4",
-    "name": "Raspberry Pi 4 Model B · 2GB (pre-owned)",
+    "name": "Raspberry Pi 4 Model B · 2GB",
     "category": "Raspberry Pi",
     "key": "raspberry-pi",
     "description": "A tiny computer for a retro games box, media centre, home server or first coding project.",
     "specs": "Pre-owned. 2GB RAM, Wi-Fi, Ethernet. Board only — pair with the case kit and a microSD.",
     "price": "£41.80",
-    "orderLink": "https://buy.stripe.com/dRmaEZ81w74H6zHg3ocs800",
+    "orderLink": "https://buy.stripe.com/dRm7sN81w4WzcY53gCcs80e",
     "image": "/images/products/raspberry-pi-4.jpg",
     "imageAlt": "Raspberry Pi 4 Model B · 2GB",
-    "checkoutEnabled": false
+    "checkoutEnabled": true,
+    "orderLabel": "Buy now",
+    "delivery": "£2.99"
   },
   {
     "id": "pi-case-kit",
@@ -20,23 +22,27 @@
     "description": "Everything to house and cool your Pi: case, fan, heatsinks and a UK plug.",
     "specs": "PWM fan, 4 heatsinks, 5V 3.6A UK adapter. Pi and microSD sold separately.",
     "price": "£16.49",
-    "orderLink": "https://buy.stripe.com/dRmcN75Tocp17DLcRccs801",
+    "orderLink": "https://buy.stripe.com/dRmbJ30z41KncY5aJ4cs80d",
     "image": "/images/products/pi-case-kit.jpg",
     "imageAlt": "GeeekPi Raspberry Pi 4 case kit",
-    "checkoutEnabled": false
+    "checkoutEnabled": true,
+    "orderLabel": "Buy now",
+    "delivery": "£2.99"
   },
   {
     "id": "microsd",
-    "name": "Samsung EVO Plus 512GB microSDXC (pre-owned)",
+    "name": "Samsung EVO Plus 512GB microSDXC",
     "category": "Storage",
     "key": "storage",
     "description": "512GB microSD storage for a Raspberry Pi, camera or compatible device.",
     "specs": "Pre-owned. 512GB, UHS-I U3, A2, V30, up to 160MB/s.",
     "price": "£55.00",
-    "orderLink": "https://buy.stripe.com/9B6bJ3ftYdt59LTaJ4cs802",
-    "image": "/images/products/microsd.svg",
-    "imageAlt": "Generic illustration of a microSD card",
-    "checkoutEnabled": false
+    "orderLink": "https://buy.stripe.com/14AdRba9E4Wz0bj9F0cs80c",
+    "image": "/images/products/samsung-evo-plus-512gb.png",
+    "imageAlt": "Samsung EVO Plus 512GB microSDXC",
+    "checkoutEnabled": true,
+    "orderLabel": "Buy now",
+    "delivery": "£2.99"
   },
   {
     "id": "card-reader",
@@ -46,10 +52,12 @@
     "description": "Read SD and microSD cards on a USB-C laptop or phone. Handy for setting up a Pi or grabbing camera photos.",
     "specs": "",
     "price": "£4.39",
-    "orderLink": "https://buy.stripe.com/28E8wR0z4dt51fn7wScs803",
+    "orderLink": "https://buy.stripe.com/aFa14p4Pk60Df6d2cycs80b",
     "image": "/images/products/card-reader.jpg",
     "imageAlt": "USB-C 3-in-1 SD / microSD reader",
-    "checkoutEnabled": false
+    "checkoutEnabled": true,
+    "orderLabel": "Buy now",
+    "delivery": "£2.99"
   },
   {
     "id": "iniu-cable",
@@ -59,10 +67,12 @@
     "description": "A 2m lead, so you can charge from the sofa instead of the floor.",
     "specs": "USB-A to USB-C, 3.1A.",
     "price": "£4.55",
-    "orderLink": "https://buy.stripe.com/dRmaEZ5To4Wz8HPcRccs804",
+    "orderLink": "https://buy.stripe.com/14A14pftY74H9LT5oKcs80a",
     "image": "/images/products/iniu-cable.jpg",
     "imageAlt": "INIU 2m USB-A to USB-C cable",
-    "checkoutEnabled": false
+    "checkoutEnabled": true,
+    "orderLabel": "Buy now",
+    "delivery": "£2.99"
   },
   {
     "id": "iniu-power-bank",
@@ -72,10 +82,12 @@
     "description": "Pocket-sized and quick enough to top up a phone or tablet on the go.",
     "specs": "10,000mAh, up to 45W.",
     "price": "£24.18",
-    "orderLink": "https://buy.stripe.com/aFaeVfgy21Kn7DLcRccs805",
+    "orderLink": "https://buy.stripe.com/28EcN72HcagT4rz7wScs809",
     "image": "/images/products/iniu-power-bank.jpg",
     "imageAlt": "INIU 45W 10,000mAh power bank",
-    "checkoutEnabled": false
+    "checkoutEnabled": true,
+    "orderLabel": "Buy now",
+    "delivery": "£2.99"
   },
   {
     "id": "fossibot-f1200",
@@ -83,13 +95,14 @@
     "category": "Portable Power",
     "key": "portable-power",
     "description": "A big rechargeable battery with plug sockets, for camping, vans, festivals and the garden.",
-    "specs": "1,024Wh, 1,200W AC output. Sold together: F1200 power station plus one 200W panel. £558.80 total; individual prices unavailable.",
-    "price": "Bundle £558.80",
-    "orderLink": "https://buy.stripe.com/28E9AV81wbkX6zH9F0cs806",
+    "specs": "1,024Wh, 1,200W AC output.",
+    "price": "£429.00",
+    "orderLink": "https://buy.stripe.com/eVq28t5Toex99LT3gCcs808",
     "image": "/images/products/fossibot-f1200.webp",
     "imageAlt": "FOSSiBOT F1200 portable power station",
-    "checkoutEnabled": false,
-    "orderLabel": "Buy station + panel bundle"
+    "checkoutEnabled": true,
+    "orderLabel": "Buy now",
+    "delivery": "£40.00"
   },
   {
     "id": "solar-panel-200w",
@@ -97,12 +110,13 @@
     "category": "Portable Power",
     "key": "portable-power",
     "description": "Fold-out panel to recharge your power station outdoors.",
-    "specs": "200W rated. Ask us about compatibility. Sold together: F1200 power station plus one 200W panel. £558.80 total; individual prices unavailable.",
-    "price": "Bundle £558.80",
-    "orderLink": "https://buy.stripe.com/28E9AV81wbkX6zH9F0cs806",
+    "specs": "200W rated. Ask us about compatibility.",
+    "price": "£175.00",
+    "orderLink": "https://buy.stripe.com/eVqfZj0z44Wz4rz4kGcs807",
     "image": "/images/products/solar-panel-200w.webp",
     "imageAlt": "FOSSiBOT 200W portable solar panel",
-    "checkoutEnabled": false,
-    "orderLabel": "Buy station + panel bundle"
+    "checkoutEnabled": true,
+    "orderLabel": "Buy now",
+    "delivery": "£40.00"
   }
 ]
