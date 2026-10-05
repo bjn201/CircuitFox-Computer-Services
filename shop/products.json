@@ -118,5 +118,92 @@
     "checkoutEnabled": true,
     "orderLabel": "Buy now",
     "delivery": "£40.00"
+  },
+  {
+    "id": "standard-build",
+    "name": "Standard Build",
+    "category": "Custom Builds",
+    "key": "custom-builds",
+    "description": "Esports, school/work, light creation, 1080p gaming.",
+    "specifications": [
+      "CPU: Ryzen 5 5600 / i5-12400",
+      "GPU: RTX 3060 / RX 7600",
+      "RAM: 16GB DDR4",
+      "Storage: 1TB NVMe SSD",
+      "Motherboard: B550/B660",
+      "PSU: 550–650W 80+ Bronze",
+      "Case: Compact ATX, good airflow"
+    ],
+    "image": "/Redpc.jpg",
+    "price": null,
+    "orderLink": "/?build=Standard%20Build#contact",
+    "orderLabel": "Enquire now",
+    "enquiryOnly": true
+  },
+  {
+    "id": "gaming-lite",
+    "name": "Gaming Lite",
+    "category": "Custom Builds",
+    "key": "custom-builds",
+    "description": "1440p gaming, streaming, light editing; quiet and efficient.",
+    "specifications": [
+      "CPU: Ryzen 5 7600X / i5-13600K",
+      "GPU: RTX 4070 / RX 7800 XT",
+      "RAM: 32GB DDR5",
+      "Storage: 1TB NVMe SSD (Gen4)",
+      "Motherboard: B650 or value Z790",
+      "PSU: 650–750W 80+ Gold",
+      "Case: Airflow mid tower",
+      "Cooler: 240mm AIO or premium air"
+    ],
+    "image": "/Bluepc.jpg",
+    "price": null,
+    "orderLink": "/?build=Gaming%20Lite#contact",
+    "orderLabel": "Enquire now",
+    "enquiryOnly": true
+  },
+  {
+    "id": "gaming-plus",
+    "name": "Gaming Plus",
+    "category": "Custom Builds",
+    "key": "custom-builds",
+    "description": "Serious 1440p/high-refresh gaming and creator work.",
+    "specifications": [
+      "CPU: Ryzen 7 9800X3D",
+      "GPU: RTX 3090 (24GB)",
+      "RAM: 32GB DDR5",
+      "Storage: 1TB NVMe SSD (Gen4) + optional 2TB add-on",
+      "Motherboard: MSI B850 PRO",
+      "PSU: 850W 80+ Gold",
+      "Case: Premium airflow tower",
+      "Cooler: 360mm AIO or top-tier air"
+    ],
+    "image": "/Greenpc.png",
+    "price": null,
+    "orderLink": "/?build=Gaming%20Plus#contact",
+    "orderLabel": "Enquire now",
+    "enquiryOnly": true
+  },
+  {
+    "id": "extreme-build",
+    "name": "Extreme Build",
+    "category": "Custom Builds",
+    "key": "custom-builds",
+    "description": "Top 1440p / entry 4K, heavy content creation, AI/ML tinkering.",
+    "specifications": [
+      "CPU: Ryzen 9 7900X/7950X / i7-14700K",
+      "GPU: RTX 4080 Super / RX 7900 XTX",
+      "RAM: 32–64GB DDR5",
+      "Storage: 2TB NVMe SSD (Gen4) + scratch SSD optional",
+      "Motherboard: X670E / Z790 performance",
+      "PSU: 850–1000W 80+ Gold/Platinum (ATX 3.0)",
+      "Case: Premium tower, excellent thermals",
+      "Cooler: 360mm AIO or custom loop-ready"
+    ],
+    "image": null,
+    "price": null,
+    "orderLink": "/?build=Extreme%20Build#contact",
+    "orderLabel": "Enquire now",
+    "enquiryOnly": true
   }
 ]
