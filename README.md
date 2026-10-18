@@ -1,8 +1,19 @@
 # CircuitFox Tech
 
-Static website for CircuitFox Tech in Ashtead, Surrey, hosted on Cloudflare Pages.
+Static site for CircuitFox Tech in Ashtead, Surrey. The domain is served through Cloudflare; GitHub Pages builds are also enabled.
 
-Shared styles and interactions live in assets/site.css and assets/site.js. Every HTML page uses the same menu and footer. The shop catalogue is configured in shop/products.json. Editable delivery, returns, terms and privacy templates are at the site root. Placeholder text is intentional and must be filled with confirmed business details.
+## Publishing
 
+Edit shop/products.json, then run `python scripts/render_catalogue.py` before publishing. This refreshes HTML prices, delivery, detail images and checkout state, including for visitors without JavaScript. JavaScript refreshes the same fields at runtime.
 
-October 2026 editorial update: shared navigation groups repair/builds, VR/retro/gadgets, guides/resilience, news and shop. Build prices are the previous indicative figures increased by exactly 20%; confirm quotes individually. News explainers carry official sources and manual review dates. Update dates only after reviewing the sources. Shop prices and Stripe Payment Links remain editable placeholders in shop/products.json.
+Eight stock products use live Stripe Payment Links; four custom builds are enquiry-only. Stripe prices and shipping rates must be changed separately from the website. Each product uses a separate checkout.
+
+To pause a product on the site, set checkoutEnabled to false and regenerate. Deactivate its Payment Link in Stripe too to stop saved/shared links. Never store API keys in this repository.
+
+## Outstanding business details
+
+Confirmed public legal seller identity and a geographical business/correspondence address are still required for terms, privacy and returns/cancellation information. Do not infer these from personal records. Current policy text does not resolve these missing details. Confirm retention arrangements against actual business practice.
+
+Unverified testimonials and the Google reviews button are omitted until real content/profile details are supplied.
+
+Checkout stays live. Monitor Stripe orders and fulfilment separately. Future automated fulfilment must use verified payment webhooks, including successful asynchronous payments, rather than a browser success page.

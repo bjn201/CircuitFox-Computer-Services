@@ -1,4 +1,9 @@
 # Product editing
-Edit shop/products.json: price, orderLink, image and specs. Replace [ORDER LINK] with the product's https://buy.stripe.com/ Payment Link and £[PRICE] with its confirmed selling price. Shared site.js applies these values to cards on the homepage, shop, portable-power page and product details. Links remain placeholders until a real price and valid Stripe link are present. Never store secret API keys here.
 
-Replace product placeholder images with real local photos. Fill delivery.html, returns.html, terms.html and privacy.html templates before checkout opens. Customer reviews, name, years in business and Google review link remain explicit placeholders in index.html.
+Edit shop/products.json, then run `python scripts/render_catalogue.py` from the repository root before publishing. Configure Stripe prices and delivery separately.
+
+A stock product requires checkoutEnabled: true, a positive GBP price such as £41.80, and an HTTPS buy.stripe.com link. Set checkoutEnabled: false and regenerate to pause website purchases. Deactivate the Stripe Payment Link too to stop saved links.
+
+Custom builds use enquiryOnly: true and the existing /?build=...#contact enquiry path.
+
+The root README records outstanding seller information. Never publish private order details, personal addresses or secret keys.
