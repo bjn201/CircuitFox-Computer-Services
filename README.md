@@ -12,7 +12,7 @@ To pause a product on the site, set checkoutEnabled to false and regenerate. Dea
 
 ## Outstanding business details
 
-Confirmed public legal seller identity and a geographical business/correspondence address are still required for terms, privacy and returns/cancellation information. Do not infer these from personal records. Current policy text does not resolve these missing details. Confirm retention arrangements against actual business practice.
+The owner confirmed Circuit Fox Tech as the seller name on 18 October 2026; it is published in terms and privacy. A geographical business/correspondence address is still required for seller and returns/cancellation information. Do not infer these from personal records. Current policy text does not resolve the missing address. Confirm retention arrangements against actual business practice.
 
 Unverified testimonials and the Google reviews button are omitted until real content/profile details are supplied.
 
