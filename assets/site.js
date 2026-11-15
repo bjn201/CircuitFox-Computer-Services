@@ -69,3 +69,6 @@ if (document.querySelector('[data-product]')) {
 
 const requestedBuild=new URLSearchParams(window.location.search).get('build');
 if(form&&["Standard Build","Gaming Lite","Gaming Plus","Extreme Build"].includes(requestedBuild)){const message=form.elements.namedItem('message');if(!message.value)message.value='I am interested in the '+requestedBuild+'.\n\nMy budget:\nGames or apps I use:\nPreferred style or other requirements:';const label=document.querySelector('label[for="contact-message"]');if(label)label.textContent='Tell us about your build';}
+
+// Recover gracefully from third-party editorial photo errors using genuine local product photography.
+document.addEventListener('error', event => {const image=event.target;if(!(image instanceof HTMLImageElement))return;const fallback=image.dataset.fallbackSrc;if(!fallback)return;image.removeAttribute('data-fallback-src');image.src=fallback;}, true);
