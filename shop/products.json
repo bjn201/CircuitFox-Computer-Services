@@ -31,17 +31,17 @@
   },
   {
     "id": "microsd",
-    "name": "Samsung EVO Plus 512GB microSDXC",
+    "name": "Integral 512GB microSDXC",
     "category": "Storage",
     "key": "storage",
     "description": "512GB microSD storage for a Raspberry Pi, camera or compatible device.",
-    "specs": "Pre-owned. 512GB, UHS-I U3, A2, V30, up to 160MB/s.",
+    "specs": "Pre-owned. 512GB, UHS-I U3, A2, V30.",
     "price": "£55.00",
     "orderLink": "https://buy.stripe.com/14AdRba9E4Wz0bj9F0cs80c",
-    "image": "/images/products/samsung-evo-plus-512gb.png",
-    "imageAlt": "Samsung EVO Plus 512GB microSDXC",
-    "checkoutEnabled": true,
-    "orderLabel": "Buy now",
+    "image": "/images/products/microsd.svg",
+    "imageAlt": "Integral 512GB microSDXC",
+    "checkoutEnabled": false,
+    "orderLabel": "Enquire to order",
     "delivery": "£2.99"
   },
   {
